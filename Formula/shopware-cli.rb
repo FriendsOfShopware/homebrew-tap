@@ -5,7 +5,7 @@
 class ShopwareCli < Formula
   desc "Shopware CLI helps Shopware developers manage extensions"
   homepage "https://friendsofshopware.com"
-  version "0.4.18"
+  version "0.4.19"
   license "MIT"
 
   depends_on "git" => :optional
@@ -14,8 +14,8 @@ class ShopwareCli < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FriendsOfShopware/shopware-cli/releases/download/0.4.18/shopware-cli_Darwin_arm64.tar.gz"
-      sha256 "10fed7008e52951365ecd47b98fba52ae66aefde5c1ee564865861664540d271"
+      url "https://github.com/FriendsOfShopware/shopware-cli/releases/download/0.4.19/shopware-cli_Darwin_arm64.tar.gz"
+      sha256 "1ee5b1f4bc2145ff3c278981778484e355ff9e8fe8603b8dc4025ec93bb43208"
 
       def install
         bin.install "shopware-cli"
@@ -25,8 +25,8 @@ class ShopwareCli < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/FriendsOfShopware/shopware-cli/releases/download/0.4.18/shopware-cli_Darwin_x86_64.tar.gz"
-      sha256 "cd2dd9a38037b1b0d4ef0179f2da4c3f7366ff6317efad056d93aed8bab44e07"
+      url "https://github.com/FriendsOfShopware/shopware-cli/releases/download/0.4.19/shopware-cli_Darwin_x86_64.tar.gz"
+      sha256 "4f59904f610e2f721b3aaef9b2399d4b00864a7a6ec08795c5042cd7c257e6a7"
 
       def install
         bin.install "shopware-cli"
@@ -39,8 +39,8 @@ class ShopwareCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/FriendsOfShopware/shopware-cli/releases/download/0.4.18/shopware-cli_Linux_x86_64.tar.gz"
-      sha256 "fbedc5bfa53a35cfef429fbe408003b37a7177e46ff89a142bd559981b959bb9"
+      url "https://github.com/FriendsOfShopware/shopware-cli/releases/download/0.4.19/shopware-cli_Linux_x86_64.tar.gz"
+      sha256 "810be2ad45a82b9cf92f4b32498fc9a6831c3bd4b35fed169fc5394d349946db"
 
       def install
         bin.install "shopware-cli"
@@ -50,8 +50,8 @@ class ShopwareCli < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FriendsOfShopware/shopware-cli/releases/download/0.4.18/shopware-cli_Linux_arm64.tar.gz"
-      sha256 "d9d9acdcb2ca32ac79780c1fb1bfe9843956ed0bf367f1b8db575485e24ca9b2"
+      url "https://github.com/FriendsOfShopware/shopware-cli/releases/download/0.4.19/shopware-cli_Linux_arm64.tar.gz"
+      sha256 "ad1692a5e53a5fbfddb8bb606f76c9a842802970fcef9fa01e79ba93477e493d"
 
       def install
         bin.install "shopware-cli"
