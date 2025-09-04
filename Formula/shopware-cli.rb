@@ -8,6 +8,9 @@ class ShopwareCli < Formula
   version "0.6.31"
   license "MIT"
 
+  deprecate! date: "2025-09-04", because: "installing shopware-cli over FriendsOfShopware tap is deprecated, use brew install shopware/tap/shopware-cli instead"
+  disable! date: "2025-09-04", because: "installing shopware-cli over FriendsOfShopware tap is deprecated, use brew install shopware/tap/shopware-cli instead"
+
   depends_on "git" => :optional
   depends_on "node" => :optional
   depends_on "node-sass"
