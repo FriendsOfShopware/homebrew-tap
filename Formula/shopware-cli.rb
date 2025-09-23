@@ -5,7 +5,7 @@
 class ShopwareCli < Formula
   desc "Shopware CLI helps Shopware developers manage extensions"
   homepage "https://shopware.com"
-  version "0.6.31"
+  version "0.6.32"
   license "MIT"
 
   deprecate! date: "2025-09-04", because: "installing shopware-cli over FriendsOfShopware tap is deprecated, use brew install shopware/tap/shopware-cli instead"
